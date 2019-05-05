@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "simple blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vikas kodag",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
