@@ -1,21 +1,15 @@
-const http = require('http')
-const fs = require('fs')
+const path = require('path')
+const express = require('express')
 
-const homePage = fs.readFileSync('index.html')
-const aboutPage = fs.readFileSync('about.html')
+const app = new express()
+app.use(express.static('public'))
 
-const server = http.createServer((request, response) => {
-    
-   if (request.url === '/about') {
-        return response.end(aboutPage)
-    } else if (request.url === '/') {
-        return response.end(homePage)
-    } else {
-        response.writeHead(404)
-        return response.end('Page not found!!')
-    }
-
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'pages/index.html'))
 })
 
 
-server.listen(3000)
+
+app.listen(5000, () => {
+    console.log('app listening on port 5000.')
+})

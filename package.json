@@ -1,14 +1,24 @@
 {
-  "name": "blog",
+  "name": "Blog",
   "version": "1.0.0",
-  "description": "simple blog",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
-  "author": "vikas kodag",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikaskodag2/Node-Project.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikaskodag2/Node-Project/issues"
+  },
+  "homepage": "https://github.com/vikaskodag2/Node-Project#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "nodemon": "^1.19.0"
   }
 }
