@@ -1,5 +1,5 @@
 {
-  "name": "Blog",
+  "name": "blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/vikaskodag2/Node-Project#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "express-edge": "^1.0.0",
     "nodemon": "^1.19.0"
   }
 }
